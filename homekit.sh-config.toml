@@ -11,124 +11,156 @@ FirmwareRevision = "100.1.1"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Teho"
 ConfiguredName = "Teho"
-[services.characteristics.Watt]
+[services.characteristics.CurrentTemperature]
 minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_w"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Teho L1"
 ConfiguredName = "Teho L1"
-[services.characteristics.Watt]
+[services.characteristics.CurrentTemperature]
 minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_l1_w"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Teho L2"
 ConfiguredName = "Teho L2"
-[services.characteristics.Watt]
+[services.characteristics.CurrentTemperature]
 minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_l2_w"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Teho L3"
 ConfiguredName = "Teho L3"
-[services.characteristics.Watt]
+[services.characteristics.CurrentTemperature]
 minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_l3_w"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Jännite L1"
 ConfiguredName = "Jännite L1"
-[services.characteristics.Volt]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_voltage_l1_v"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Jännite L2"
 ConfiguredName = "Jännite L2"
-[services.characteristics.Volt]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_voltage_l2_v"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Jännite L3"
 ConfiguredName = "Jännite L3"
-[services.characteristics.Volt]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_voltage_l3_v"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Virta L1"
 ConfiguredName = "Virta L1"
-[services.characteristics.Ampere]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_current_l1_a"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Virta L2"
 ConfiguredName = "Virta L2"
-[services.characteristics.Ampere]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_current_l2_a"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Virta L3"
 ConfiguredName = "Virta L3"
-[services.characteristics.Ampere]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_current_l3_a"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Ostettu energia"
 ConfiguredName = "Ostettu energia"
-[services.characteristics.KilowattHour]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh total_power_import_kwh"
 
 
 [[services]]
-type = "Outlet"
+type = "TemperatureSensor"
 
 [services.characteristics]
 Name = "Myyty energia"
 ConfiguredName = "Myyty energia"
-[services.characteristics.KilowattHour]
+[services.characteristics.CurrentTemperature]
+minValue = 0
+maxValue = 99999
+minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh total_power_export_kwh"
