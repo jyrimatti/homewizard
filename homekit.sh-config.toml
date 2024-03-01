@@ -6,7 +6,7 @@ Identify = {} # leave property completely out 'cos otherwise Homekit won't accep
 Manufacturer = "Jyri-Matti Lähteenmäki"
 Model = "P1"
 Name = "HomeWizard"
-SerialNumber = "AA:AA:AA:AA:AA:EE"
+SerialNumber = "AA:AA:AA:AA:AA:00"
 FirmwareRevision = "100.1.1"
 
 
