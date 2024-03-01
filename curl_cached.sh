@@ -10,7 +10,7 @@ outputfile="${XDG_RUNTIME_DIR:-/tmp}/$(basename "$PWD")/$(echo -n "$url" | tr -c
 test -e "$(dirname "$outputfile")" || mkdir -p "$(dirname "$outputfile")"
 
 (
-    flock -n 8 || exit 1
+    flock 8
 
     fetch() {
         curl -4 --no-progress-meter -L "$url" -o "$outputfile"
