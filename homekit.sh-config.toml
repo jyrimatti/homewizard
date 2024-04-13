@@ -17,7 +17,7 @@ type = "TemperatureSensor"
 Name = "Teho"
 ConfiguredName = "Teho"
 [services.characteristics.CurrentTemperature]
-polling = 5
+polling = 6
 minValue = -99
 maxValue = 99999
 minStep = 0.001

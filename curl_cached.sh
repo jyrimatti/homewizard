@@ -4,7 +4,7 @@ set -eu
 
 url="$1"
 
-minutes="${CURL_CACHED_MINUTES:-1}"
+minutes="${CURL_CACHED_MINUTES:-0.1}"
 
 outputfile="${XDG_RUNTIME_DIR:-/tmp}/$(basename "$PWD")/$(echo -n "$url" | tr -c '[:alnum:]' '_')"
 
