@@ -18,7 +18,7 @@ Name = "Teho"
 ConfiguredName = "Teho"
 [services.characteristics.CurrentTemperature]
 polling = 6
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_w"
@@ -31,7 +31,7 @@ type = "TemperatureSensor"
 Name = "Teho L1"
 ConfiguredName = "Teho L1"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_l1_w"
@@ -44,7 +44,7 @@ type = "TemperatureSensor"
 Name = "Teho L2"
 ConfiguredName = "Teho L2"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_l2_w"
@@ -57,7 +57,7 @@ type = "TemperatureSensor"
 Name = "Teho L3"
 ConfiguredName = "Teho L3"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_power_l3_w"
@@ -70,7 +70,7 @@ type = "TemperatureSensor"
 Name = "Jännite L1"
 ConfiguredName = "Jännite L1"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_voltage_l1_v"
@@ -83,7 +83,7 @@ type = "TemperatureSensor"
 Name = "Jännite L2"
 ConfiguredName = "Jännite L2"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_voltage_l2_v"
@@ -96,7 +96,7 @@ type = "TemperatureSensor"
 Name = "Jännite L3"
 ConfiguredName = "Jännite L3"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_voltage_l3_v"
@@ -109,7 +109,7 @@ type = "TemperatureSensor"
 Name = "Virta L1"
 ConfiguredName = "Virta L1"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_current_l1_a"
@@ -122,7 +122,7 @@ type = "TemperatureSensor"
 Name = "Virta L2"
 ConfiguredName = "Virta L2"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_current_l2_a"
@@ -135,7 +135,7 @@ type = "TemperatureSensor"
 Name = "Virta L3"
 ConfiguredName = "Virta L3"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh active_current_l3_a"
@@ -148,7 +148,7 @@ type = "TemperatureSensor"
 Name = "Ostettu energia"
 ConfiguredName = "Ostettu energia"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh total_power_import_kwh"
@@ -161,7 +161,7 @@ type = "TemperatureSensor"
 Name = "Myyty energia"
 ConfiguredName = "Myyty energia"
 [services.characteristics.CurrentTemperature]
-minValue = -99
+minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh total_power_export_kwh"
