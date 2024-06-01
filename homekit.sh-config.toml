@@ -24,6 +24,7 @@ ConfiguredName = "Teho"
 minValue = -99999
 maxValue = 99999
 minStep = 0.001
+polling = 5
 cmd = "cd homewizard; ./cmd/data.sh active_power_w"
 
 
