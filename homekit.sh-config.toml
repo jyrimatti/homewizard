@@ -1,3 +1,7 @@
+bridge = "homewizard"
+port = 12300
+username = "AA:AA:AA:AA:AA:00"
+
 [[services]]
 type = "AccessoryInformation"
 
