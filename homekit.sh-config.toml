@@ -169,3 +169,55 @@ minValue = -99999
 maxValue = 99999
 minStep = 0.001
 cmd = "cd homewizard; ./cmd/data.sh total_power_export_kwh"
+
+
+[[services]]
+type = "TemperatureSensor"
+
+[services.characteristics]
+Name = "Kuluvan tunnin energia"
+ConfiguredName = "Kuluvan tunnin energia"
+[services.characteristics.CurrentTemperature]
+minValue = -99999
+maxValue = 99999
+minStep = 0.001
+cmd = "cd homewizard; ./cmd/current_hourly_yield.sh"
+
+
+[[services]]
+type = "TemperatureSensor"
+
+[services.characteristics]
+Name = "Kuluvan vartin energia"
+ConfiguredName = "Kuluvan vartin energia"
+[services.characteristics.CurrentTemperature]
+minValue = -99999
+maxValue = 99999
+minStep = 0.001
+cmd = "cd homewizard; ./cmd/current_quarterly_yield.sh"
+
+
+[[services]]
+type = "TemperatureSensor"
+
+[services.characteristics]
+Name = "Edeltävän tunnin energia"
+ConfiguredName = "Edeltävän tunnin energia"
+[services.characteristics.CurrentTemperature]
+minValue = -99999
+maxValue = 99999
+minStep = 0.001
+cmd = "cd homewizard; ./cmd/previous_hourly_yield.sh"
+
+
+[[services]]
+type = "TemperatureSensor"
+
+[services.characteristics]
+Name = "Edeltävän vartin energia"
+ConfiguredName = "Edeltävän vartin energia"
+[services.characteristics.CurrentTemperature]
+minValue = -99999
+maxValue = 99999
+minStep = 0.001
+cmd = "cd homewizard; ./cmd/previous_quarterly_yield.sh"
