@@ -6,10 +6,10 @@ dbfile="${1:-./homewizard.db}"
 
 echo "SELECT imported - exported
       FROM (
-        SELECT (SELECT (MAX(measurement)-MIN(measurement))
+        SELECT (SELECT COALESCE(MAX(measurement)-MIN(measurement), 0)
                 FROM total_power_export_kwh
                 WHERE instant >= strftime('%s', strftime('%Y-%m-%dT%H:00:00Z', 'now'))) exported,
-               (SELECT (MAX(measurement)-MIN(measurement))
+               (SELECT COALESCE(MAX(measurement)-MIN(measurement), 0)
                 FROM total_power_import_kwh
                 WHERE instant >= strftime('%s', strftime('%Y-%m-%dT%H:00:00Z', 'now'))) imported)"\
  | sqlite3 "$dbfile"\
