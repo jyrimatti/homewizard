@@ -1,5 +1,6 @@
 #! /usr/bin/env nix-shell
-#! nix-shell --pure -i dash -I channel:nixos-24.11-small -p nix dash sqlite
+#! nix-shell --pure
+#! nix-shell -i dash -I channel:nixos-24.11-small -p nix dash sqlite
 set -eu
 
 dbfile="${1:-./homewizard.db}"
